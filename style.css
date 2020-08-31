@@ -1,0 +1,31 @@
+body {
+  background: #333;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 300px;
+  margin: -150px;
+  background: gray;
+  color: #3446A;
+  text-align:center;
+  font-size: 40px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  animation-name: myanimation;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+ 
+}
+
+@keyframes myanimation {
+  0% {background-color: white; border-radius: 0 0 0 0;}
+  25% {background-color: red;  border-radius: 50% 0 0 0;}
+  50% {background-color: green; border-radius: 50% 50% 0 0}
+  75% {background-color: blue;  border-radius: 50% 50% 50% 0;}
+  100% {background-color: white; border-radius: 50% 50% 50% 50%;}
+}
